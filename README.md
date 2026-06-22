@@ -90,7 +90,7 @@
 *Example:*
 >If Jenkins fails during the build stage, the application will not be deployed until the problem is resolved.
 
-## GIT QUESTION
+**GIT QUESTION**
 
 # 1. What is Git?
 
@@ -248,3 +248,103 @@ Version Control: Tracks file changes over time.
 Advantages of Git: Fast, distributed, branching, collaboration, backup.
 Centralized vs Distributed: SVN uses a central server; Git gives every user a complete copy.
 .git Folder: Hidden directory containing all Git metadata and history.
+
+**GITHUB ACTION (CI & CD)**
+1. What is GitHub?
+
+Answer:
+GitHub is a cloud-based platform used to host and manage Git repositories. It helps developers collaborate, track changes, review code, and automate workflows.
+
+2. What is the difference between Git and GitHub?
+
+Answer:
+
+Git is a version control system used to track code changes.
+GitHub is a platform that hosts Git repositories and provides collaboration features like Pull Requests, Issues, and GitHub Actions.
+3. What is Continuous Integration (CI)?
+
+Answer:
+Continuous Integration (CI) is a practice where developers frequently merge code into a shared repository, and automated builds and tests are run after every commit to detect issues early.
+
+4. What is GitHub Actions?
+
+Answer:
+GitHub Actions is GitHub's CI/CD service that automates tasks such as building, testing, and deploying applications based on events like push, pull request, or issue creation.
+
+5. What is a Workflow in GitHub Actions?
+
+Answer:
+A workflow is an automated process defined in a YAML file. It contains one or more jobs that run when a specified event occurs.
+
+Example:
+
+on: push
+6. Where are GitHub Action workflow files stored?
+
+Answer:
+Workflow files are stored inside:
+
+.github/workflows/
+
+Example:
+
+.github/workflows/ci.yml
+7. What is YAML and why is it used?
+
+Answer:
+YAML (Yet Another Markup Language) is a human-readable configuration language used to define automation pipelines and configuration files in tools like GitHub Actions, Kubernetes, and Ansible.
+
+Example:
+
+name: DevOps
+active: true
+8. What are some common GitHub Actions events?
+
+Answer:
+Common events are:
+
+push
+pull_request
+issues
+
+Example:
+
+on:
+  push
+9. What is a Git Tag?
+
+Answer:
+A Git Tag is a reference that points to a specific commit. Tags are commonly used to mark software releases such as v1.0, v2.0, etc.
+
+Example:
+
+git tag v1.0
+10. What is the difference between a Lightweight Tag and an Annotated Tag?
+
+Answer:
+
+Lightweight Tag	Annotated Tag
+Points to a commit only	Points to a commit and stores metadata
+No message	Has tag message
+Simple tag	Preferred for releases
+
+Example:
+
+# Lightweight Tag
+git tag v1.0
+
+# Annotated Tag
+git tag -a v1.0 -m "Release 1.0"
+Bonus Question (Very Common)
+
+Q: What happens when code is pushed to a repository with a CI pipeline?
+
+Answer:
+
+Developer pushes code.
+CI pipeline is triggered.
+Application is built.
+Automated tests are executed.
+Code quality checks are performed.
+Results are reported.
+If all checks pass, the code is ready for deployment.
