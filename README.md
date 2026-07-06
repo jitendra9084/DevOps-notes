@@ -347,20 +347,3 @@ Application is built.
 Automated tests are executed.
 Code quality checks are performed.
 Results are reported.
-
-## Interview Summary
-
-*Term	            Meaning*
->Dependency	              *External library used in the project
->Unit Test	              *Tests a small part of the code
->Coverage	              *Percentage of code tested
->Static Code Analysis	  *Checks code without running it
->Lint	                  *Checks coding style and formatting
->Security Scan	          *Finds security vulnerabilities
->Quality Gate	          *Ensures all checks pass before merging
->Maven	                  8java build automation tool
->POM	pom.xml               *project configuration file
->Repository	              *Storage for Maven dependencies and packages
->JAR	                      *Java application package
->WAR	                      *Java web application package
->EAR	                     *Enterprise application package
