@@ -110,19 +110,79 @@ The host machine is the physical or virtual machine on which Docker and containe
 Answer:
 The Linux kernel provides the Namespaces (for isolation) and cgroups (for resource control) that Docker uses to run containers.
 
-**⭐ Interview Tip (Very Common Questions)**
+# DevOps Fresher Interview Questions
 
-These are the questions interviewers ask most often for freshers:
+## 1. What is a Dockerfile?
 
->What is Docker?
->What is a Container?
->Difference between Container and Virtual Machine?
->What are Namespaces?
->What are cgroups?
->Difference between Namespaces and cgroups?
->What is Docker Engine?
->Why do we use Containers?
->Can multiple containers run on one host?
->How does Docker provide isolation?
+Answer:
+A Dockerfile is a text file containing instructions to build a Docker image.
 
-If you can answer these 10 questions confidently, you'll have a strong foundation for Docker-related DevOps fresher interviews.
+## 2. What is the difference between an Image and a Container?
+
+Answer:
+
+Image: A read-only template.
+Container: A running instance of an image.
+## 3. What is Attached Mode?
+
+Answer:
+In attached mode, the container runs in the foreground, and logs are displayed directly in the terminal.
+
+## 4. What is Detached Mode?
+
+Answer:
+Detached mode runs the container in the background using the -d option, allowing the terminal to remain free.
+
+## 5. What is Interactive Mode?
+
+Answer:
+Interactive mode (-it) opens a shell inside the container so you can execute commands interactively.
+
+## 6. What is docker exec?
+
+Answer:
+docker exec is used to execute commands inside an already running container.
+
+## 7. What is the purpose of the FROM instruction?
+
+Answer:
+It specifies the base image for the Docker image.
+
+## 8. What is the purpose of the RUN instruction?
+
+Answer:
+It executes commands during the image build process.
+
+## 9. What is the purpose of the CMD instruction?
+
+Answer:
+It specifies the default command that runs when a container starts.
+
+## 10. What is the purpose of the COPY instruction?
+
+Answer:
+It copies files and directories from the local machine into the Docker image.
+
+## 11. What is the purpose of the ADD instruction?
+
+Answer:
+It copies files into the image and can also download files from URLs or automatically extract compressed archives.
+
+## 12. What is the difference between COPY and ADD?
+COPY	ADD
+Copies local files only	Copies local files, supports URLs, and extracts archives
+Simpler and preferred	More powerful but used only when needed
+## 13. What is the purpose of the EXPOSE instruction?
+
+Answer:
+It documents the port on which the application inside the container listens.
+
+## 14. How do you build a Docker image?
+
+Answer:
+
+docker image build -t myimage:1.0 .
+## 15. What does the -t option do in docker build?
+
+Answer:
+It assigns a name (tag) and optional version to the Docker image.
