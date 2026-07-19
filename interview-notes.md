@@ -75,3 +75,81 @@ TCP vs UDP:
 # Answer:
 "I have completed projects on Docker, GitHub Actions, AWS, Terraform, and Nginx. My projects include deploying a Spring Boot application with Docker, hosting a React application on Nginx, creating a CI/CD pipeline using GitHub Actions, and provisioning AWS infrastructure using Terraform."
 These answers are at the right length for a fresher interview and are easy to remember. Since you've already practiced these tools in your projects, try to relate your answers to your own hands-on experience whenever possible.
+
+# 1. What is Kubernetes?
+>Kubernetes is an open-source container orchestration platform used to deploy, manage, scale, and monitor containerized applications automatically. It helps ensure high availability, self-healing, and load balancing of applications.
+
+# 2. What is a Kubernetes Cluster?
+>A Kubernetes cluster is a group of machines (nodes) that work together to run containerized applications. It consists of one or more Master Nodes and one or more Worker Nodes.
+
+# 3. What is a Master Node?
+>The Master Node manages the entire Kubernetes cluster. It schedules workloads, maintains the desired state, and controls the Worker Nodes. It does not usually run application workloads.
+*Main Components:*
+>API Server
+>Scheduler
+>Controller Manager
+>etcd
+
+# 4. What is a Worker Node?
+>A Worker Node is the machine where application containers run. It receives instructions from the Master Node and executes them.
+
+>Main Components:
+>kubelet
+>kube-proxy
+>Container Runtime (containerd)
+
+# 5. What is a Pod?
+>A Pod is the smallest deployable unit in Kubernetes. It contains one or more containers that share the same network and storage.
+>Example:
+>If you deploy an Nginx application in Kubernetes, it runs inside a Pod.
+
+# 6. What is kubeadm?
+>kubeadm is a tool used to create and configure a Kubernetes cluster. It initializes the Master Node and generates the command to join Worker Nodes.
+
+>Example Command:
+
+>kubeadm init
+# 7. What is kubectl?
+
+Answer:
+
+>kubectl is the command-line tool used to interact with a Kubernetes cluster. It allows us to create, view, update, and delete Kubernetes resources.
+
+>Example Commands:
+
+>kubectl get nodes
+>kubectl get pods
+>kubectl apply -f deployment.yaml
+# 8. What is kubelet?
+
+Answer:
+
+>kubelet is an agent that runs on every Worker Node. It communicates with the API Server and ensures that the required Pods are running properly.
+
+# 9. What is containerd?
+
+Answer:
+
+>containerd is a container runtime that creates and runs containers. Kubernetes uses it through the Container Runtime Interface (CRI) to manage containers.
+
+>Interview Point:
+
+>Earlier Kubernetes supported Docker through Docker Shim, but now containerd is commonly used.
+
+# 10. What is CNI?
+
+Answer:
+
+>CNI (Container Network Interface) provides networking between Pods and Nodes in a Kubernetes cluster. It assigns IP addresses and enables Pod-to-Pod communication.
+
+>Popular CNI Plugins:
+
+>Calico
+>Weave Net
+.Flannel
+# ⭐ Bonus Interview Question
+>What is the difference between kubeadm, kubectl, and kubelet?
+>Tool	Purpose
+>kubeadm	Creates and sets up the Kubernetes cluster>
+>kubectl	CLI tool used to manage the Kubernetes cluster.
+>kubelet	Agent running on each Worker Node that ensures Pods are running correctly.
